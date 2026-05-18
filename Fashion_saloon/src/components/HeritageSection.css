@@ -1,0 +1,93 @@
+.heritage-section {
+  position: relative;
+  min-height: clamp(480px, 65vw, 780px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heritage-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/sections/heritage-bg.jpg');
+  background-size: cover;
+  background-position: center 20%;
+}
+
+.heritage-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0a0810 0%, #151020 50%, #0c0a10 100%);
+}
+
+.heritage-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.72) 0%,
+    rgba(0,0,0,0.5) 50%,
+    rgba(0,0,0,0.65) 100%
+  );
+  z-index: 1;
+}
+
+.heritage-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  max-width: 720px;
+}
+
+.heritage-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--c-text);
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+
+.heritage-text {
+  font-size: var(--text-base);
+  color: rgba(240, 235, 228, 0.82);
+  line-height: 2;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+}
+
+.heritage-hours {
+  font-size: var(--text-sm);
+  color: var(--c-accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.heritage-cta {
+  display: inline-block;
+  padding: 0.85rem 2.5rem;
+  background: transparent;
+  border: 1px solid rgba(196, 168, 112, 0.6);
+  color: var(--c-text);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition:
+    background var(--dur-normal) var(--ease-quart),
+    border-color var(--dur-normal),
+    color var(--dur-normal);
+}
+
+.heritage-cta:hover {
+  background: var(--c-accent);
+  border-color: var(--c-accent);
+  color: #0a0a0a;
+}

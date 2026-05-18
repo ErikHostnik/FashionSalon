@@ -1,0 +1,119 @@
+.blog-post-page {
+  background: var(--c-bg);
+  min-height: 100vh;
+  padding-bottom: 8rem;
+}
+
+.post-hero {
+  position: relative;
+  height: clamp(320px, 50vw, 560px);
+  margin-bottom: var(--space-xl);
+  overflow: hidden;
+}
+
+.post-hero-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-color: #141210;
+}
+
+.post-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.3) 0%,
+    rgba(0,0,0,0.65) 60%,
+    rgba(10,10,10,0.95) 100%
+  );
+  z-index: 1;
+}
+
+.post-hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding-bottom: var(--space-lg);
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.post-author {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--c-accent);
+}
+
+.post-sep {
+  color: var(--c-text-muted);
+  font-size: var(--text-xs);
+}
+
+.post-date,
+.post-read {
+  font-size: var(--text-xs);
+  color: var(--c-text-secondary);
+}
+
+.post-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--c-text);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 800px;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+}
+
+.post-body-wrap {
+  padding-top: 0;
+}
+
+.post-back-link {
+  display: inline-block;
+  font-size: var(--text-xs);
+  color: var(--c-text-secondary);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-lg);
+  transition: color var(--dur-fast);
+}
+
+.post-back-link:hover {
+  color: var(--c-accent);
+}
+
+.post-body {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.post-body p {
+  font-size: var(--text-base);
+  color: rgba(240, 235, 228, 0.8);
+  line-height: 1.85;
+}
+
+.post-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  min-height: 60vh;
+  padding-top: calc(var(--topbar-height) + var(--nav-height));
+  color: var(--c-text-secondary);
+}
