@@ -27,7 +27,7 @@ export default function Navbar() {
           +386 40 897097
         </a>
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/modnisalonrenate"
           target="_blank"
           rel="noopener noreferrer"
           className="topbar-link topbar-social"
