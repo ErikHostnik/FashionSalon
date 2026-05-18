@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="footer-col">
           <h3 className="footer-col-title">Sledite nam</h3>
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/modnisalonrenate"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-social-link"
