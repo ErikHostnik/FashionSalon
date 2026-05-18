@@ -61,7 +61,7 @@ export default function Footer() {
 
       <div className="footer-bottom section-inner">
         <p className="footer-copy">
-          © {year} Modni salon Renate – Renata Pečnik s.p. Vse pravice pridržane.
+          © {year} Modni salon Renate – Renata Pečnik Šporn. Vse pravice pridržane.
         </p>
       </div>
     </footer>
